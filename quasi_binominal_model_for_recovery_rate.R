@@ -1,6 +1,6 @@
-loans <- read.csv("C:/Users/dzmitry/Desktop/dyplom/Nowy folder (3)/main_loan_base.csv")
-balance <- read.csv("C:/Users/dzmitry/Desktop/dyplom/Nowy folder (3)/monthly_balance_base.csv")
-repayment <- read.csv("C:/Users/dzmitry/Desktop/dyplom/Nowy folder (3)/repayment_base.csv")
+loans <- read.csv("C:/Users/dzmitry/Desktop/dyplom/main_loan_base.csv")
+balance <- read.csv("C:/Users/dzmitry/Desktop/dyplom/monthly_balance_base.csv")
+repayment <- read.csv("C:/Users/dzmitry/Desktop/dyplom/repayment_base.csv")
 library(dplyr)
 
 avg_bal <- balance %>%
@@ -223,4 +223,5 @@ cat("🔹 Średni rzeczywisty RR (mały model):", round(mean_rr_small, 4), "\n")
 cat("🔹 Średni przewidziany RR (mały model):", round(mean_pred_small, 4), "\n")
 cat("🔹 Średni ważony rzeczywisty RR (mały model):", round(weighted_rr_small, 4), "\n")
 cat("🔹 Średni ważony przewidziany RR (mały model):", round(weighted_pred_small, 4), "\n")
+
 
